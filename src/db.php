@@ -12,7 +12,7 @@ function conn(string $usuario) : mysqli{
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
     //usar los datos para crear la conexion
-    $conexion = new mysqli($config['host'], $datos['user'],$datos['pass'],$config['dbname'],$config['port']);
+    $conexion = new mysqli($config['host'], $datos['user'],$datos['pass'],$config['dbname']);
     $conexion->set_charset($config['charset']);
     return $conexion;
 
