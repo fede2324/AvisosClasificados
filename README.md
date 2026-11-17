@@ -10,8 +10,8 @@ Aplicación web simple desarrollada en PHP que permite publicar, listar y gestio
 
 ### Funcionalidades
 
-- [ ] `clasificados.php`: listado público de avisos, ordenados por categoría y fecha de creación
-- [ ] Avisos resaltados (negrita o tamaño mayor) cuando el autor paga el doble
+- [X] `clasificados.php`: listado público de avisos, ordenados por categoría y fecha de creación
+- [X] Avisos resaltados (negrita o tamaño mayor) cuando el autor paga el doble
 - [ ] `publicador.php`: ver, crear, modificar y borrar los propios avisos
 - [ ] Un publicador no puede modificar ni borrar avisos de otro publicador
 - [ ] Modificación de avisos sin cambio de categoría
