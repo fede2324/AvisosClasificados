@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avisos Clasificados</title>
-    <link href="../css/boostrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .card-header { background: linear-gradient(135deg, #0d6efd, #0a58ca); }
+        .seccion-especifica { display: none; } 
+    </style>
 </head>
 <body class="bg-light">
 
@@ -22,8 +27,10 @@
         <li class="nav-item">
           <a class="nav-link" href="publicador.php">Mis avisos</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="admin.php">admin</a>
+        </ul>
+        <ul flex.row class="navbar-nav ms-auto">
+        <li class="nav-item ">
+          <a class="nav-link text-warning fw-bold" href="admin.php">admin</a>
         </li>
       </ul>
     </div>
