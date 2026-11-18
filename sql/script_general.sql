@@ -145,11 +145,16 @@ FROM rol r JOIN permiso p
   ON p.nombre_permiso IN ('ejecutar_backup','ver_log_backups')
 WHERE r.nombre = 'respaldo';
 
+
 -- Creacion de usuario Hasheado (desde terminal y DEFAULT_HASH de PHP)  [password:admin123]
 INSERT INTO usuario (nombre, email, telefono, passwd_hash, id_rol)
-VALUES ('Admin', 'admin@test.com', '099000000', '$2y$10$yqFEsGk/T08pM8/JBEExDu5WruUqKtEk5fQCz8nc4FZIkjDC11DOm',
-        (SELECT id_rol FROM rol WHERE nombre = 'administrador'));
+VALUES ('_Admin_', 'admin@test.com', '099000000', '$2y$10$yqFEsGk/T08pM8/JBEExDu5WruUqKtEk5fQCz8nc4FZIkjDC11DOm',
+         (SELECT id_rol FROM rol WHERE nombre = 'administrador'));
 
+-- Creacion de usuario "Publicador"   [password:admin123]
+INSERT INTO usuario (nombre, email, telefono, passwd_hash, id_rol)
+VALUES ('_publicador_', 'publicador@test.com', '099001001', '$2y$10$yqFEsGk/T08pM8/JBEExDu5WruUqKtEk5fQCz8nc4FZIkjDC11DOm',
+        (SELECT id_rol FROM rol WHERE nombre = 'publicador'));
 
 
 -- ============================================

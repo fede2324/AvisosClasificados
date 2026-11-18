@@ -1,5 +1,5 @@
 <?php
-
+// Array asociativo con los datos de la conexion
 return [
     'host'    => 'localhost',
     'dbname'  => 'avisos_clasificados',
@@ -11,3 +11,5 @@ return [
         'admin'      => ['user' => 'adminAvisos', 'pass' => 'admin'],
     ],
 ];
+
+

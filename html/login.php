@@ -5,9 +5,7 @@ require_once 'auth.php';
 $error = $_SESSION['error'] ?? null;
 unset($_SESSION['error']);
 
-if ($error): ?>
-    <p style="color:red;"><?= htmlspecialchars($error) ?></p>
-<?php endif; 
+
 
 require __DIR__ . '/includes/header.php';
 ?>
@@ -17,8 +15,7 @@ require __DIR__ . '/includes/header.php';
         <div class="card-body p-4 p-md-5">
             
             <div class="text-center mb-4">
-                <h2 class="fw-bold fs-3">Bienvenido</h2>
-                <p class="text-muted small">Ingresa tus datos para continuar</p>
+                <h2 class="fw-bold fs-3 ">Inicio de sesion</h2>
             </div>
             <form action="procesar_login.php" method="POST" class="needs-validation">
                 <div class="mb-3">
@@ -41,4 +38,13 @@ require __DIR__ . '/includes/header.php';
             </form>
         </div>
     </div>
-<?php require __DIR__ . '/includes/footer.php';?>
+
+    <!-- Mensaje de error (para el usuario) -->
+
+    <?php
+    if ($error): ?>
+        <div class="alert alert-danger text-center" role="alert">
+            <?= htmlspecialchars($error) ?>
+        </div>
+    <?php endif; 
+require __DIR__ . '/includes/footer.php';?>

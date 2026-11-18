@@ -22,7 +22,7 @@ try {
                 header('Location: clasificados.php');
         }
     } else {
-        $_SESSION['error'] = 'Email o contraseña incorrectos, o el usuario no tiene rol asignado.';
+        $_SESSION['error'] = 'Email o contraseña incorrectos';
         header('Location: login.php');
     }
 } catch (mysqli_sql_exception $e) {

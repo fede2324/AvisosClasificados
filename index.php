@@ -14,5 +14,5 @@
 <!------------------------------------------------------------------->
 
 <?php
-  include(__DIR__ . '/../apps/admin/home/.index.php');
+  include(__DIR__ . '/html/index.php');
 ?>
