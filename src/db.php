@@ -1,6 +1,5 @@
 <?php
 namespace database;
-
 use mysqli;
 
 function conn(string $usuario) : mysqli{
