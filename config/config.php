@@ -1,5 +1,5 @@
 <?php
-// Plantilla de configuración. Copiar a config.php y completar con las claves reales.
+
 return [
     'host'    => 'localhost',
     'dbname'  => 'avisos_clasificados',
