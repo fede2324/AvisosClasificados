@@ -1,6 +1,6 @@
 <?php
   // Verificar si hay un usuario logeado para el header dinamico
-  require_once __DIR__ . '/../auth.php'; 
+  require_once __DIR__ . '/../../src/auth.php'; 
   require_once __DIR__ . '/../../config/config.php';
   $usuario = usuario_actual();
 ?>

@@ -1,6 +1,6 @@
 <?php
 // Panel de login
-require_once 'auth.php';
+require_once __DIR__ . '/../src/auth.php'; 
 
 $error = $_SESSION['error'] ?? null;
 unset($_SESSION['error']);
@@ -17,7 +17,7 @@ require __DIR__ . '/includes/header.php';
             <div class="text-center mb-4">
                 <h2 class="fw-bold fs-3 ">Inicio de sesion</h2>
             </div>
-            <form action="procesar_login.php" method="POST" class="needs-validation">
+            <form action="src/procesar_login.php" method="POST" class="needs-validation">
                 <div class="mb-3">
                     <label for="usuario" class="form-label">Correo o Usuario</label>
                     <input type="email" class="form-control" id="usuario" name="email" required>
