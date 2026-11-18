@@ -1,8 +1,11 @@
 <?php
 use function database\conn;
-// Panel de administrador
 require __DIR__ . '/includes/header.php';
-require __DIR__ . '/../src/db.php';
+// Panel de administrador
+
+// Verificar permisos
+require_once 'auth.php';
+requerir_rol(['administrador']);
 
 try {
     $conexion = conn('admin');
@@ -59,18 +62,11 @@ try {
                      Gestionar Avisos
                 </a>
                 <a href="admin_autores.php" class="list-group-item list-group-item-action">
-                     Gestionar Autores
+                     Gestionar usuarios
                 </a>
-                <a href="admin_categorias.php" class="list-group-item list-group-item-action">
-                     Gestionar Categorías
-                </a>
-                <a href="admin_roles.php" class="list-group-item list-group-item-action">
-                     Roles y Permisos
-                </a>
-                <a href="admin_backups.php" class="list-group-item list-group-item-action">
-                     Backups
-                </a>
-                
+                <a href="admin_database.php" class="list-group-item list-group-item-action">
+                     Generar Base de Datos
+                </a>                
             </div>
         </div>
         
@@ -89,5 +85,3 @@ try {
 </div>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>
-    </body>
-</html>
