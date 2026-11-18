@@ -17,13 +17,13 @@ Aplicación web simple desarrollada en PHP que permite publicar, listar y gestio
 - [ ] Modificación de avisos sin cambio de categoría
 - [ ] `admin.php`: ver todos los avisos y borrar cualquiera
 - [ ] `admin.php`: crear y borrar usuarios publicadores
-- [ ] Autenticación simple: usuario y contraseña en cada acción (sin sesiones)
+- [x] Autenticación 
 
 ### Técnico
 
 - [ ] Programación orientada a objetos (herencia, encapsulación, getters/setters)
-- [ ] Conexión a MySQL con PDO y consultas preparadas
-- [ ] Manejo de excepciones (try/catch)
+- [x] Conexión a MySQL con mysqli y consultas preparadas
+- [x] Manejo de excepciones (try/catch)
 - [ ] Formularios enviados por POST, con validación del lado del servidor
 
 ### Extras (opcionales)
